@@ -1,6 +1,5 @@
 class ProductsController < ApplicationController
 
-  class Products
 
     def one_item_method
     product = Product.first
@@ -11,5 +10,4 @@ class ProductsController < ApplicationController
       products = products.all
       render json: products.as_json
     end 
-  end 
-end
+ end 
