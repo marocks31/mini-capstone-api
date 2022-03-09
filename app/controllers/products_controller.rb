@@ -3,11 +3,13 @@ class ProductsController < ApplicationController
   class Products
 
     def one_item_method
-      render json: "hi"
+    product = Product.first
+      render json: product.as_json
     end
 
     def all_items_method
-      render json: "bye"
+      products = products.all
+      render json: products.as_json
     end 
   end 
 end
