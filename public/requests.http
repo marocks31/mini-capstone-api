@@ -1,0 +1,15 @@
+### Product Index
+GET http://localhost:3000/products
+
+### Recipe Create
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "bratz doll",
+  "price": 19.99,
+  "image_url": "n/a",
+  "description": "You don't have this one yet."
+}
+
+  
