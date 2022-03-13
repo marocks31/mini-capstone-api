@@ -12,4 +12,15 @@ Content-Type: application/json
   "description": "You don't have this one yet."
 }
 
+### Product Update
+PATCH http://localhost:3000/products/7
+Content-Type: application/json
+
+{
+  "name": "Polly Pockets"
+}
+
+
+### Recipe Destroy
+DELETE http://localhost:3000/products/5
   
