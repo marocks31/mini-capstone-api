@@ -7,5 +7,5 @@ Rails.application.routes.draw do
 
   get "/products"=> "products#index"
 
-  delete "/products/:id"=> "recipes#destroy"
+  delete "/products/:id"=> "products#destroy"
 end

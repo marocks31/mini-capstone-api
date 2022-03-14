@@ -1,15 +1,15 @@
 ### Product Index
 GET http://localhost:3000/products
 
-### Recipe Create
+### Product Create
 POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-  "name": "bratz doll",
-  "price": 19.99,
+  "name": "Skipper and Barbie",
+  "price": 35.99,
   "image_url": "n/a",
-  "description": "You don't have this one yet."
+  "description": "They are so cool."
 }
 
 ### Product Update
@@ -21,6 +21,6 @@ Content-Type: application/json
 }
 
 
-### Recipe Destroy
-DELETE http://localhost:3000/products/5
+### Product Destroy
+DELETE http://localhost:3000/products/8
   
