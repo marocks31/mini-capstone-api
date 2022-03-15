@@ -1,3 +1,6 @@
+### Product Index
+GET http://localhost:3000/products/
+
 ### Product Show
 GET http://localhost:3000/products/4
 
@@ -6,10 +9,10 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-  "name": "Lego Village",
-  "price": 164.99 ,
+  "name": "Strawberry Shortcake Doll",
+  "price": 67.99 ,
   "image_url": "n/a",
-  "description": "12x12 LEGO Village with a secret elf."
+  "description": "Comes with an extra bonnet."
 }
 
 ### Product Update
@@ -17,10 +20,10 @@ PATCH http://localhost:3000/products/7
 Content-Type: application/json
 
 {
-  "name": "Polly Pockets"
+  "name": "Troll with purple belly button"
 }
 
 
 ### Product Destroy
-DELETE http://localhost:3000/products/8
+DELETE http://localhost:3000/products/5
   
