@@ -6,10 +6,10 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-  "name": "Skipper and Barbie",
-  "price": 35.99,
+  "name": "Lego Village",
+  "price": 164.99 ,
   "image_url": "n/a",
-  "description": "They are so cool."
+  "description": "12x12 LEGO Village with a secret elf."
 }
 
 ### Product Update

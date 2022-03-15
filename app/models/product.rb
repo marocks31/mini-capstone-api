@@ -13,6 +13,6 @@ class Product < ApplicationRecord
   end
 
   def total
-    price + tax 
+    "$ #{price + tax}"
   end 
 end
