@@ -1,5 +1,5 @@
-### Product Index
-GET http://localhost:3000/products
+### Product Show
+GET http://localhost:3000/products/4
 
 ### Product Create
 POST http://localhost:3000/products
