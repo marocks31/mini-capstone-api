@@ -2,7 +2,7 @@
 GET http://localhost:3000/products/
 
 ### Product Show
-GET http://localhost:3000/products/4
+GET http://localhost:3000/products/10
 
 ### Product Create
 POST http://localhost:3000/products
