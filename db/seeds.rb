@@ -7,3 +7,5 @@ Product.create!([
   {name: "Troll with purple belly button", price: 19, image_url: "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1120w,f_auto,q_auto:best/newscms/2018_02/1309269/polly-pocket-magical-mansion.jpg", description: "You don't have this one yet. Super rare. You can recreate Dynasty with this one!", quantity: 4},
   {name: "Unicorn Pop-it Figit", price: 7, image_url: "https://m.media-amazon.com/images/I/81LF+rg2pHL._AC_SL1500_.jpg", description: "This figit pop-it is super beautiful and perfect in every single way. This unicorn comes with 2 awesome tiny pop-it keychains. ", quantity: 8}
 ])
+
+Supplier.create([{name: "Bob's toy factory", email: "bobthetoyguy@test.com", phone_number: "911-911-toys"}, {name: "Ronald McDonald Toy Supplier", email: "mcdonaldtoys@test.com", phone_number: "773-773-toyz"}, {name: "Oscar Martinez", email: "martinezqualitytoys@test.com", phone_number: "312-buy-toys"}])
