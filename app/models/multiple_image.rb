@@ -1,0 +1,2 @@
+class MultipleImage < ApplicationRecord
+end
