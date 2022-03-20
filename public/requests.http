@@ -11,7 +11,6 @@ Content-Type: application/json
 {
   "name": "Strawberry Shortcake Doll",
   "price": 67.99 ,
-  "image_url": "n/a",
   "description": "Comes with an extra bonnet."
 }
 
