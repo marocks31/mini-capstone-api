@@ -1,2 +1,0 @@
-class MultipleImage < ApplicationRecord
-end
