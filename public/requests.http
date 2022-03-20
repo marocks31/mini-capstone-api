@@ -9,9 +9,10 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-  "name": "Strawberry Shortcake Doll",
+  "name": "Barbie clothes",
   "price": 67.99 ,
-  "description": "Comes with an extra bonnet."
+  "description": "Comes with an extra bonnet.",
+  "supplier_id": "2"
 }
 
 ### Product Update
