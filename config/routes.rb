@@ -8,4 +8,8 @@ Rails.application.routes.draw do
   get "/products"=> "products#index"
 
   delete "/products/:id"=> "products#destroy"
+
+  #user route
+  post "/users" => "users#create"
+  
 end
