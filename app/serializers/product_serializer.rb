@@ -3,4 +3,5 @@ class ProductSerializer < ActiveModel::Serializer
   
   belongs_to :supplier
   has_many :images
+  belongs_to :user
 end
