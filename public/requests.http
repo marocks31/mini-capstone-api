@@ -1,6 +1,8 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NDgxNTc3MDV9.VxxDO7uKRQs1gdZajXKSCIa8t1BYuRPJmDQ2coTq3UA
+
 ### Product Index
 GET http://localhost:3000/products/
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDc5OTY3NzF9.isc8OnM0SvhOVrqIOAJnltm_GcuDYtFps8g_qFrvpwk"
+Authorization: 
 
 ### Product Show
 GET http://localhost:3000/products/1
@@ -33,10 +35,10 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "name": "Test name 1",
-  "email": "test1@test.com",
-  "password": "password1",
-  "password_confirmation": "password1"
+  "name": "Test2",
+  "email": "test2@test.com",
+  "password": "password",
+  "password_confirmation": "password"
 }
   
 
@@ -45,27 +47,28 @@ POST http://localhost:3000/sessions
 Content-Type: application/json
 
 {
-  "email": "test1@test.com",
-  "password": "password1"
+  "email": "test2@test.com",
+  "password": "password"
 }
 
-### Orders Create
+### Order Create
 POST http://localhost:3000/orders
+Authorization:  Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "user_id": 1,
-  "product_id": 1,
+  "product_id": 2,
   "quantity": 1,
-  "subtotal": 4,
-  "tax": 3.00,
-  "total": 50
+  "subtotal": 90,
+  "tax": 20,
+  "total": 110
 }
 
-### Orders Show
-GET http://localhost:3000/orders/1
+### Order Show
+GET http://localhost:3000/orders/3
+Authorization: {{jwt}}
 
-### Orders Index
+### Order Index
 GET http://localhost:3000/orders
-
+Authorization: Bearer {{jwt}}
 
