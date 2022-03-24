@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NDgxNTc3MDV9.VxxDO7uKRQs1gdZajXKSCIa8t1BYuRPJmDQ2coTq3UA
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDgyNDYxMTZ9.dnDC8VD5Mwf8gX-8dN4O12bqgsFurnCoLRuysmhnqZo
 
 ### Product Index
 GET http://localhost:3000/products/
@@ -35,8 +35,8 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "name": "Test2",
-  "email": "test2@test.com",
+  "name": "Test",
+  "email": "test@test.com",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -47,7 +47,7 @@ POST http://localhost:3000/sessions
 Content-Type: application/json
 
 {
-  "email": "test2@test.com",
+  "email": "test@test.com",
   "password": "password"
 }
 
@@ -65,8 +65,8 @@ Content-Type: application/json
 }
 
 ### Order Show
-GET http://localhost:3000/orders/3
-Authorization: {{jwt}}
+GET http://localhost:3000/orders/1
+Authorization: Bearer {{jwt}}
 
 ### Order Index
 GET http://localhost:3000/orders
