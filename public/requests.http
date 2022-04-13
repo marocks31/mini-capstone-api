@@ -58,15 +58,15 @@ Authorization:  Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "product_id": 2,
+  "product_id": 4,
   "quantity": 1,
-  "subtotal": 90,
-  "tax": 20,
-  "total": 110
+  "subtotal": 10,
+  "tax": 2,
+  "total": 12
 }
 
 ### Order Show
-GET http://localhost:3000/orders/1
+GET http://localhost:3000/orders/3
 Authorization: Bearer {{jwt}}
 
 ### Order Index
@@ -79,7 +79,7 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "product_id": 3,
+  "product_id": 4,
   "status": "carted",
   "quantity": 1
 

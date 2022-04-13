@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
      before_action :authenticate_admin, except: [:index, :show]
 
     def show
-    product = Product.find_by(params["id"])
+    product = Product.find(params["id"])
     render json: product 
     end
 

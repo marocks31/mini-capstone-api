@@ -25,7 +25,7 @@ class OrdersController < ApplicationController
   )
 
     if order.save
-      carted_products.update_all(status: "purchased", order.id)
+      # carted_products.update_all(status: "purchased", order.id)
     render json: order.as_json 
     else 
     render json: {error_messages: order.errors.full_messages}, status: 422

@@ -1,7 +1,6 @@
 class CartedProductsController < ApplicationController
 
 def create
- pp current_user
   carted_product = CartedProduct.new(
     user_id: current_user.id,
     product_id: params[:product_id],
