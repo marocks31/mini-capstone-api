@@ -1,29 +1,30 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDgyNDYxMTZ9.dnDC8VD5Mwf8gX-8dN4O12bqgsFurnCoLRuysmhnqZo
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDk5MDA5ODl9.AvSYRcNQOzp0W_CPSfQpSUJT0px0zfHIvwgERsK-f78
 
 ### Product Index
 GET http://localhost:3000/products/
-Authorization: 
 
 ### Product Show
-GET http://localhost:3000/products/1
+GET http://localhost:3000/products/8
 
 ### Product Create
 POST http://localhost:3000/products
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "name": "Barbie clothes",
-  "price": 67.99 ,
-  "description": "Comes with an extra bonnet.",
-  "supplier_id": "2"
+  "name": "Sorry Game",
+  "price": 20 ,
+  "description": "Purple kinetic sand",
+  "supplier_id": 1
 }
 
 ### Product Update
-PATCH http://localhost:3000/products/4
+PATCH http://localhost:3000/products/9
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "name": "Troll with purple belly button"
+  "name": "Vintage Troll"
 }
 
 
@@ -35,8 +36,8 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "name": "Test",
-  "email": "test@test.com",
+  "name": "Test5",
+  "email": "test5@test.com",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -47,7 +48,7 @@ POST http://localhost:3000/sessions
 Content-Type: application/json
 
 {
-  "email": "test@test.com",
+  "email": "test5@test.com",
   "password": "password"
 }
 
@@ -72,7 +73,7 @@ Authorization: Bearer {{jwt}}
 GET http://localhost:3000/orders
 Authorization: Bearer {{jwt}}
 
-### Carted_Products Create
+### Carted Products Create
 POST http://localhost:3000/carted_products
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
