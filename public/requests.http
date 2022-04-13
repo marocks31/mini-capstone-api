@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDk5MDA5ODl9.AvSYRcNQOzp0W_CPSfQpSUJT0px0zfHIvwgERsK-f78
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDk5NzMxOTB9.6oPmQsFNh6e8c7_5tvl_oJTKgWeKJ0GHMy6D9JtxDXY
 
 ### Product Index
 GET http://localhost:3000/products/
@@ -12,24 +12,25 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "name": "Sorry Game",
+  "name": "Puffy Paint",
   "price": 20 ,
-  "description": "Purple kinetic sand",
+  "description": "Rainbow set",
   "supplier_id": 1
 }
 
 ### Product Update
-PATCH http://localhost:3000/products/9
+PATCH http://localhost:3000/products/1
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "name": "Vintage Troll"
+  "name": "Silly Putty"
 }
 
 
 ### Product Destroy
-DELETE http://localhost:3000/products/5
+DELETE http://localhost:3000/products/11
+Authorization: Bearer {{jwt}}
 
 ### Users create (signup)
 POST http://localhost:3000/users
@@ -58,7 +59,7 @@ Authorization:  Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "product_id": 4,
+  "product_id": 10,
   "quantity": 1,
   "subtotal": 10,
   "tax": 2,
@@ -66,7 +67,7 @@ Content-Type: application/json
 }
 
 ### Order Show
-GET http://localhost:3000/orders/3
+GET http://localhost:3000/orders/5
 Authorization: Bearer {{jwt}}
 
 ### Order Index
@@ -79,7 +80,7 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "product_id": 4,
+  "product_id": 8,
   "status": "carted",
   "quantity": 1
 
