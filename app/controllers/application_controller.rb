@@ -15,6 +15,7 @@ class ApplicationController < ActionController::API
         nil
       end
     end
+    # User.second
   end
 
   def authenticate_user
