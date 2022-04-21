@@ -59,7 +59,7 @@ Authorization:  Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "product_id": 10,
+  "product_id": 4,
   "quantity": 1,
   "subtotal": 10,
   "tax": 2,
@@ -80,7 +80,7 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "product_id": 8,
+  "product_id": 4,
   "status": "carted",
   "quantity": 1
 
